@@ -13,6 +13,8 @@ def ninjas():
 @app.route('/ninja/<color>')
 def color(color):
 	print color
+	# This looks good, but if you are looking for improvements there are a ways to refactor this logic into few lines/comparisons. 
+	# Don't worry though, it's not within the scope of this assignment. Good job!
 	if( color == 'blue'):
 		return render_template("index.html",color='/static/Ninjas/leonardo.jpg')
 	elif( color == 'orange'):
